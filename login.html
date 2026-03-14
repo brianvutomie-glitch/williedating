@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Login - WillieDating</title>
+
+<style>
+
+body{
+font-family: Arial;
+background:#f2f2f2;
+text-align:center;
+margin-top:80px;
+}
+
+h2{
+color:#ff2e63;
+}
+
+input{
+display:block;
+margin:10px auto;
+padding:10px;
+width:250px;
+}
+
+button{
+padding:12px 25px;
+background:#ff2e63;
+color:white;
+border:none;
+border-radius:5px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h2>Login to WillieDating</h2>
+
+<form onsubmit="loginUser(event)">
+
+<input type="text" placeholder="Name" required>
+
+<input type="password" placeholder="Password" required>
+
+<button type="submit">Login</button>
+
+</form>
+
+<script>
+
+function loginUser(event){
+
+event.preventDefault()
+
+alert("Login successful!")
+
+window.location.href="profile.html"
+
+}
+
+</script>
+
+</body>
+
+</html>
